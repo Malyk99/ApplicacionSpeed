@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#0E1937">
+
+    <!-- Imagen que actúa como botón para regresar -->
+    <ImageView
+        android:id="@+id/navigationIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="start|center_vertical"
+        android:contentDescription="Back button"
+        android:clickable="true"
+        android:onClick="onBackPressed" />
+    <!-- EditText para la búsqueda -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar taller"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Button para iniciar la búsqueda -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_below="@id/searchEditText"
+        android:backgroundTint="#C2407E"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" />
+
+    <!-- Mapa -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+
+

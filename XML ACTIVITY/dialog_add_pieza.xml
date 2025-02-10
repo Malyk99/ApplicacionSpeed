@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FEFEFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la pieza"
+        android:textSize="16sp"
+        android:textColor="#06112A"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:hint="Ingrese el nombre"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID de la imagen"
+        android:textSize="16sp"
+        android:textColor="#06112A"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etImagenId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:hint="Ingrese el ID de la imagen"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

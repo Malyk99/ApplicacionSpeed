@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#06112A">
+    <ImageView
+        android:id="@+id/navigationIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:clickable="true"
+        android:contentDescription="Back button"
+        android:onClick="onBackPressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"/>
+    <!-- Botón para añadir coche -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAnadirCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir coche"
+        android:backgroundTint="#10A0DC"
+        android:layout_marginBottom="16dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPiezas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

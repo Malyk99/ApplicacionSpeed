@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Imagen representativa del coche -->
+    <ImageView
+        android:id="@+id/imagenCoche"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/coche_imagen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder" />
+
+    <!-- Contenedor de la marca y modelo -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Marca del coche -->
+        <TextView
+            android:id="@+id/marcaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marca"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Modelo del coche -->
+        <TextView
+            android:id="@+id/modeloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modelo"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

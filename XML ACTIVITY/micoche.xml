@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06112A"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/navigationIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:clickable="true"
+        android:contentDescription="Back button"
+        android:onClick="onBackPressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imagenCoche"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/persona"
+        android:contentDescription="Imagen coche"
+        app:layout_constraintTop_toBottomOf="@id/navigationIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCoches"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FEFEFF"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imagenCoche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvNombreCoche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione un coche"
+        android:textSize="24sp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCoches"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPiezas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FEFEFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreCoche"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Guardar"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#10A0DC" />
+
+        <Button
+            android:id="@+id/btnAñadir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Añadir"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#12407E" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modificar"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5851A6" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Eliminar"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

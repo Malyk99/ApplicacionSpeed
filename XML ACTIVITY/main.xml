@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#0E1937">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Imagen"
+        android:layout_gravity="center"
+        >
+    </ImageView>
+    <!-- Botón Piezas -->
+    <Button
+        android:id="@+id/btn_piezas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Piezas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C2407E"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
+
+    <!-- Botón Mapa -->
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mapa"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#10A0DC"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
+
+    <!-- Botón Mi Coche -->
+    <Button
+        android:id="@+id/btn_micoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi Coche"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5851A6"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
+</LinearLayout>
+
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="248dp"
+        android:layout_height="49dp"
+        android:text="Atras"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="623dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="28dp"
+        android:text="Marca de Coche"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="46dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="227dp"
+        android:layout_height="28dp"
+        android:text="Modelo"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="278dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="446dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

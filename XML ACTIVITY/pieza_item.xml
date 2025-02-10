@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#FFFF"
+    android:layout_marginBottom="8dp">
+
+    <!-- Imagen de la pieza -->
+    <ImageView
+        android:id="@+id/ivImagenPieza"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pieza_imagen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder" />
+
+    <!-- Nombre de la pieza -->
+    <TextView
+        android:id="@+id/tvNombrePieza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Nombre de la pieza"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000Z" />
+</LinearLayout>
